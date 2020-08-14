@@ -1,6 +1,9 @@
 require "gist_generator/version"
 require "gist_generator/gist"
 
+require "gist_generator/serializers/json"
+require "gist_generator/serializers/pretty"
+
 module GistGenerator
   class Error < StandardError; end
 
