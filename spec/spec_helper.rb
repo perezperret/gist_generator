@@ -1,5 +1,8 @@
 require "bundler/setup"
 require "gist_generator"
+require 'webmock/rspec'
+
+Dir[File.expand_path('./fixtures/**/*', __dir__)].each { |f| require f }
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     gist_generator (0.1.0)
-      faraday (~> 1.0.1)
+      faraday (~> 1.0)
       octokit (~> 4.0)
 
 GEM
@@ -10,9 +10,12 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
     diff-lcs (1.4.4)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
+    hashdiff (1.0.1)
     multipart-post (2.1.1)
     octokit (4.18.0)
       faraday (>= 0.9)
@@ -32,9 +35,14 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.3)
+    safe_yaml (1.0.5)
     sawyer (0.8.2)
       addressable (>= 2.3.5)
       faraday (> 0.8, < 2.0)
+    webmock (3.8.3)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
 
 PLATFORMS
   ruby
@@ -44,6 +52,7 @@ DEPENDENCIES
   gist_generator!
   rake (~> 10.0)
   rspec (~> 3.0)
+  webmock (~> 3.7)
 
 BUNDLED WITH
    2.0.2
