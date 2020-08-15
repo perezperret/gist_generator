@@ -1,5 +1,7 @@
 # GistGenerator
 
+Check out the [sample](https://github.com/perezperret/gist_generator_sample).
+
 I built this project as a learning experience. Eventually I would like to write a series of tutorials for my [railsbyexample repos](https://github.com/railsbyexample) using this to generate the code sections within a static site. I wasn't able to find something similar.
 
 This is still a test and I might change the API significantly in the future.
